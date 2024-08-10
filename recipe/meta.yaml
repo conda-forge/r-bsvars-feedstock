@@ -1,4 +1,4 @@
-{% set version = '3.0' %}
+{% set version = "3.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bsvars_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bsvars/bsvars_{{ version }}.tar.gz
-  sha256: 875614c640a245c852a2fd8558618e2818b4487989a3cb6f83bf376f48076842
+  sha256: aab8a8cc4dda2fda89dfdbdab7f1668e89a6c7f5ba40b67e751478000608088d
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -69,21 +69,10 @@ about:
   home: https://bsvars.github.io/bsvars/
   dev_url: https://github.com/bsvars/bsvars/
   license: GPL-3.0-or-later
-  summary: "Provides fast and efficient procedures for Bayesian analysis of Structural Vector
-    Autoregressions. This package estimates a wide range of models, including homo-,
-    heteroskedastic, and non-normal specifications. Structural models can be identified
-    by adjustable exclusion restrictions, time-varying volatility, or non-normality.
-    They all include a flexible three-level equation-specific local-global hierarchical
-    prior distribution for the estimated level of shrinkage for autoregressive and structural
-    parameters. Additionally, the package facilitates predictive and structural analyses
-    such as impulse responses, forecast error variance and historical decompositions,
-    forecasting, verification of heteroskedasticity, non-normality, and hypotheses on
-    autoregressive parameters, as well as analyses of structural shocks, volatilities,
-    and fitted values. Beautiful plots, informative summary functions, and extensive
-    documentation complement all this. The implemented techniques align closely with
-    those presented in L\xFCtkepohl, Shang, Uzeda, & Wo\u017Aniak (2024) <doi:10.48550/arXiv.2404.11057>,
-    L\xFCtkepohl & Wo\u017Aniak (2020) <doi:10.1016/j.jedc.2020.103862>, and Song &
-    Wo\u017Aniak (2021) <doi:10.1093/acrefore/9780190625979.013.174>."
+  summary: "Provides fast and efficient procedures for Bayesian analysis of Structural Vector Autoregressions. This package estimates a wide range of models, including homo-, heteroskedastic, and non-normal specifications. Structural models can be identified by adjustable exclusion restrictions, time-varying volatility,
+    or non-normality. They all include a flexible three-level equation-specific local-global hierarchical prior distribution for the estimated level of shrinkage for autoregressive and structural parameters. Additionally, the package facilitates predictive and structural analyses such as impulse responses, forecast error
+    variance and historical decompositions, forecasting, verification of heteroskedasticity, non-normality, and hypotheses on autoregressive parameters, as well as analyses of structural shocks, volatilities, and fitted values. Beautiful plots, informative summary functions, and extensive documentation complement all this.
+    The implemented techniques align closely with those presented in Lütkepohl, Shang, Uzeda, & Woźniak (2024) <doi:10.48550/arXiv.2404.11057>, Lütkepohl & Woźniak (2020) <doi:10.1016/j.jedc.2020.103862>, and Song & Woźniak (2021) <doi:10.1093/acrefore/9780190625979.013.174>."
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'

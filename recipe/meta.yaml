@@ -46,7 +46,6 @@ requirements:
     - r-stochvol
     - libblas
     - liblapack
-    - m2w64-libwinpthread-git  # [win]
   run:
     - r-base
     - r-gigrvg
@@ -56,7 +55,6 @@ requirements:
     - r-rcppprogress >=0.1
     - r-rcpptn
     - r-stochvol
-    - m2w64-libwinpthread-git  # [win]
 
 test:
   commands:

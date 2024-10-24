@@ -1,4 +1,4 @@
-{% set version = "3.1" %}
+{% set version = "3.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bsvars_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bsvars/bsvars_{{ version }}.tar.gz
-  sha256: aab8a8cc4dda2fda89dfdbdab7f1668e89a6c7f5ba40b67e751478000608088d
+  sha256: a434f09392c6819de81cdebb46362a98d231871484a0334a274162898d315719
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/

@@ -44,6 +44,8 @@ requirements:
     - r-r6
     - r-stochvol
     - r-generics
+    - libblas
+    - liblapack
   run:
     - r-base
     - r-rcpp >=1.0.7

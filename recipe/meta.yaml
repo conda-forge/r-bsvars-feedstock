@@ -37,24 +37,24 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-gigrvg
-    - r-r6
     - r-rcpp >=1.0.7
-    - r-rcpparmadillo
     - r-rcppprogress >=0.1
     - r-rcpptn
+    - r-gigrvg
+    - r-r6
     - r-stochvol
-    - libblas
-    - liblapack
+    - r-generics
+    - r-rcpparmadillo
   run:
     - r-base
-    - r-gigrvg
-    - r-r6
     - r-rcpp >=1.0.7
-    - r-rcpparmadillo
     - r-rcppprogress >=0.1
     - r-rcpptn
+    - r-gigrvg
+    - r-r6
     - r-stochvol
+    - r-generics
+    - r-rcpparmadillo
 
 test:
   commands:

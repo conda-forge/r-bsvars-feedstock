@@ -44,7 +44,6 @@ requirements:
     - r-r6
     - r-stochvol
     - r-generics
-    - r-rcpparmadillo
   run:
     - r-base
     - r-rcpp >=1.0.7
@@ -54,7 +53,6 @@ requirements:
     - r-r6
     - r-stochvol
     - r-generics
-    - r-rcpparmadillo
 
 test:
   commands:

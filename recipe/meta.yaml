@@ -3,7 +3,7 @@
 
 package:
   name: r-bsvars
-  version: {{ version|replace("-", "_") }}
+  version: "x"{{ version|replace("-", "_") }}"
 
 source:
   url:

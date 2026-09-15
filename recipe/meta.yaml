@@ -46,6 +46,8 @@ requirements:
     - r-generics
     - libblas
     - liblapack
+    - libgomp                     # [linux or win]
+    - llvm-openmp                 # [osx]
   run:
     - r-base
     - r-rcpp >=1.0.7
